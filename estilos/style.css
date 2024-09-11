@@ -1,0 +1,158 @@
+html, body{
+    margin: 0;
+    align-items: center;
+    max-width: 100%;
+    min-width: 10%;
+}
+
+.container{
+    max-width: 100%;
+    min-width: 10%;
+    padding: 0.5rem;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(100, 0, 50, 1);
+    text-align: center;
+}
+
+.head {
+    border: 10px pink dashed;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.head h1 {
+    font-family: 'Fascinate Inline';
+    text-align: center;
+    font-size: 90px;
+    padding: 1%;
+    text-decoration:  overline;
+    text-shadow: 0.3rem 0.4rem pink;
+}
+
+.body1 {
+    border: 5px pink dashed;
+    align-items: center;
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+.tarea {
+    border: none;
+    font-size: 18px;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+.boton {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: gray;
+    border: 5px rgb(197, 118, 131) dashed;
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: green;
+}
+
+.boton:hover {
+    background-color: pink;
+    color: black;
+}
+
+.footer {
+    padding: 1px;
+    margin: 1.5rem;
+    border: 5px pink dashed;
+    
+}
+
+ol{
+    margin: 10px 5px;
+}
+
+li { 
+    background-color: rgba(250, 128, 114, 0.466);
+    list-style-type: '🦋';
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+
+.listaTareasList {
+    text-align: center;
+    border-radius: 3px;
+}
+
+
+#toast ,#toast1 ,#toast2{
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#toast.show ,#toast1.show ,#toast2.show{
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+@media(max-width: 768px){
+    .body1{
+        flex-direction: column;
+    }
+
+    .tarea{
+        width: 80%;
+    }
+
+    .head h1{
+        font-size: 60px;
+        width: 100%;
+    }
+
+    .listaTareasList{
+        font-size: 10px;
+    }
+
+    html{
+        height: 100%;
+    }
+
+    li{
+        margin: 5px 0;
+    }
+}

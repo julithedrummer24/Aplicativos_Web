@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAREAS DIARIAS</title>
+    <link rel="icon" href="./image copy.png">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+
+<body>
+
+        <div class="container">
+
+            <div class="head">
+                <h1>TAREAS DIARIAS</h1>
+            </div>
+        
+            <form class="body1"  method="dialog">
+                <input type="text" class="tarea" placeholder="DIGITA TU TAREA..." id="inputTarea"></input>
+                <button type="text" class="boton" id="btnAgregar">AGREGAR TAREA </button>
+            </form>
+        
+            <div class="footer">
+                <ol id="listaTareas"></ol>
+            </div>
+    
+            <div id="toast1">Tarea Agregada</div>
+            <div id="toast">Tarea Eliminada</div>
+            <div id="toast2">INGRESA UNA TAREA</div>
+
+
+        </div>
+
+    <script src="modelo/tarea.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+
+</body>
+
+</html>
